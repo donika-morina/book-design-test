@@ -1,0 +1,468 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body-container {
+    margin: auto;
+    margin-top: 100px;
+    width: 75vw;
+
+}
+
+/* ------------------------  SPACERS  ------------------------ */
+.small-spacer {
+    height: 10%;
+}
+
+/* ------------------------  WOODEN SHELF ------------------------ */
+.shelf {
+    height: 30px;
+    width: 100%;
+    /*background-color: rgb(233, 174, 140);
+    border: 2px solid rgb(224, 167, 135);*/
+    background-image: linear-gradient(rgb(233, 174, 140), rgb(233, 174, 140), rgb(199, 149, 120));
+    border-radius: 6px;
+}
+
+.book-container {
+    display: flex;
+    height: 300px;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 1px;
+}
+
+/* ----------------------  SHARED BOOK PROPERTIES ------------------------ */
+
+.book:hover {
+    transform: scale(1.1);
+    box-shadow: 12px 10px 11px -3px rgba(0, 0, 0, 0.30),
+        -12px 10px 11px -3px rgba(0, 0, 0, 0.30);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.book {
+    transition: transform 0.6s ease;
+}
+
+/* ------------------------  BOOK 1 DESIGN ------------------------ */
+
+.book1 {
+    margin-top: 0px;
+    width: 50px;
+    height: 300px;
+    border-radius: 5px;
+    border: 0px solid rgb(104, 104, 104);
+    background-color: gray;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.097), rgba(0, 0, 0, 0.15));
+    color: white;
+}
+
+.book1-title {
+    padding: 5px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-transform: uppercase;
+}
+
+.book1-author {
+    font-size: 10px;
+    writing-mode: initial;
+    text-orientation: initial;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.book1-publish-logo {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.book1-line {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 234, 0, 0.147);
+    margin: 2px 0 2px 0;
+}
+
+.book1-item-content {
+    margin: 2px 2px 2px 2px;
+    width: auto;
+    height: 296px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book1-vertical-lines {
+    margin: 0 1px 0 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.book1-vertical-lines span {
+    border-right: solid 1px;
+    border-color: rgba(255, 255, 255, 0.2);
+    height: 10px;
+}
+
+.book1-line-container,
+.book1-bottom-book,
+.book1-top-book {
+    width: 100%;
+}
+
+
+/* ------------------------  BOOK 2 DESIGN ------------------------ */
+
+.book2 {
+    width: 65px;
+    height: 275px;
+    margin-top: 25px;
+    border-radius: 5%;
+    background-color: rgb(226, 160, 188);
+    /*background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.097), rgba(0, 0, 0, 0.15));*/
+    color: rgb(48, 48, 48);
+}
+
+.book2-spine {
+    display: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book2-top {
+    height: 30%;
+}
+
+.book2-middle {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book2-title,
+.book2-author {
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    padding: 5%;
+}
+
+.book2-author {
+    background-color: rgba(60, 60, 60, 0.557);
+    border-radius: 5%;
+    margin: 0 10%;
+    color: rgb(246, 246, 246);
+}
+
+
+.book2-bottom {
+    height: 30%;
+}
+
+
+/* ------------------------  BOOK 3 DESIGN ------------------------ */
+/* Penguin Classic*/
+
+.book3 {
+    width: 30px;
+    height: 275px;
+    margin-top: 25px;
+    border-radius: 5%;
+    background-color: rgb(34, 34, 34);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.097), rgba(0, 0, 0, 0.5));
+    color: rgb(231, 231, 231);
+}
+
+.book3-spine {
+    display: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book3-top,
+.book3-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.book3-author,
+.book3-title,
+.book3-publisher-name {
+    font-family: Verdana, Geneva, sans-serif;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.book3-top {
+    height: 75%;
+    font-size: 9px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.book3-top-container {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+
+.book3-orangeline {
+    height: 1px;
+    border-radius: 5%;
+    background-color: rgb(188, 78, 0);
+}
+
+.book3-bottom {
+    height: 35%;
+    font-size: 7px;
+}
+
+.book3-publisher {
+    height: 28px;
+    background-color: whitesmoke;
+}
+
+.book3-publisher-name {
+    margin: auto;
+}
+
+/* ------------------------  BOOK 4 DESIGN ------------------------ */
+/* English Library */
+
+.book4 {
+    width: 60px;
+    height: 275px;
+    margin-top: 25px;
+    border-radius: 5%;
+    background-color: rgb(255, 115, 0);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.023), rgba(0, 0, 0, 0.1));
+    color: rgb(231, 231, 231);
+}
+
+.book4-spine {
+    height: 100%;
+    width: 75%;
+    margin: auto;
+    background-color: rgb(65, 65, 65);
+}
+
+.book4-inner {
+    height: 100%;
+    width: 65%;
+    margin: auto;
+    background-color: rgb(208, 139, 167);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book4-top {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.book4-author,
+.book4-title {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-transform: uppercase;
+    color: rgb(65, 65, 65);
+    text-align: center;
+}
+
+.book4-author {
+    font-family: sans-serif;
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+.book4-title {
+    font-family: serif;
+    font-size: 12px;
+}
+
+.book4-bottom {
+    margin: auto;
+}
+
+/* ------------------------  BOOK 5 DESIGN ------------------------ */
+/* Everyman's Library*/
+
+.book5 {
+    height: 285px;
+    width: 50px;
+    margin-top: 15px;
+    border-radius: 5%;
+    background-color: rgb(175, 37, 37);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.023), rgba(0, 0, 0, 0.1));
+    z-index: 0;
+}
+
+.book5-spine {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.book5-container {
+    position: absolute;
+    top: 18%;
+    width: 100%;
+    height: 30%;
+}
+
+.book5-goldline {
+    height: 7%;
+    background-color: rgb(172, 152, 96);
+}
+
+.book5-bookinfo {
+    height: 93%;
+    padding: 10% 0;
+    background-color: rgb(44, 44, 44);
+    color: rgb(172, 152, 96);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 0;
+    gap: 5%;
+}
+
+.book5-author {
+    font-family: serif;
+    font-size: 10px;
+    padding: 0 5%;
+}
+
+.book5-symbol {
+    background-color: rgba(172, 152, 96, 0.5);
+    height: 10%;
+    width: 25%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.book5-title {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 8px;
+}
+
+.book5-publisher {
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    width: 60%;
+    height: 15%;
+    background-color: rgb(175, 37, 37);
+    font-size: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.book5-vlines,
+.book5-hlines {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.book5-hlines {
+    flex-direction: column;
+}
+
+.book5-vl {
+    width: 1px;
+    height: 100%;
+    background-color: rgba(44, 44, 44, 0.515);
+    z-index: -1;
+}
+
+.book5-vl:nth-child(1),
+.book5-vl:nth-child(15) {
+    height: 65%;
+    margin-top: 6px;
+}
+
+.book5-vl:nth-child(2),
+.book5-vl:nth-child(14) {
+    height: 75%;
+}
+
+.book5-vl:nth-child(3),
+.book5-vl:nth-child(13) {
+    height: 80%;
+}
+
+.book5-vl:nth-child(4),
+.book5-vl:nth-child(12) {
+    height: 85%;
+}
+
+.book5-vl:nth-child(5),
+.book5-vl:nth-child(11) {
+    height: 87%;
+}
+
+.book5-vl:nth-child(6),
+.book5-vl:nth-child(10) {
+    height: 90%;
+}
+
+.book5-vl:nth-child(7),
+.book5-vl:nth-child(9) {
+    height: 93%;
+}
+
+.book5-vl:nth-child(8) {
+    height: 97%;
+}
+
+
+.book5-hl {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(172, 152, 96, 0.645);
+    z-index: -2;
+}
+
+.book5-hl:nth-child(1),
+.book5-hl:nth-child(80) {
+    width: 45px;
+    margin-left: 2px;
+}
+
+.book5-hl:nth-child(2),
+.book5-hl:nth-child(79) {
+    width: 48px;
+    margin-left: 1px;
+}
