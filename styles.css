@@ -120,55 +120,64 @@
 
 
 /* ------------------------  BOOK 2 DESIGN ------------------------ */
-
+/* The Modern Library Classics*/
 .book2 {
-    width: 65px;
-    height: 275px;
-    margin-top: 25px;
+    width: 38px;
+    height: 290px;
+    margin-top: 10px;
     border-radius: 5%;
-    background-color: rgb(226, 160, 188);
-    /*background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.097), rgba(0, 0, 0, 0.15));*/
+    background-color: rgb(211, 143, 98);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.097), rgba(0, 0, 0, 0.15));
     color: rgb(48, 48, 48);
 }
 
 .book2-spine {
-    display: relative;
-    width: 100%;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .book2-top {
-    height: 30%;
-}
-
-.book2-middle {
-    height: 40%;
+    border-radius: 5% 5% 0 0;
+    background-color: rgb(44, 44, 44);
+    color: rgba(245, 245, 245, 0.73);
+    font-size: 8px;
+    height: 25%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+}
+
+.book2-wl {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.73);
+    margin: 1px 0;
+}
+
+.book2-symbol {
+    height: 20%;
 }
 
 .book2-title,
 .book2-author {
-    text-align: center;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 11px;
-    padding: 5%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.book2-title {
+    font-size: 18px;
+    text-transform: capitalize;
 }
 
 .book2-author {
-    background-color: rgba(60, 60, 60, 0.557);
-    border-radius: 5%;
-    margin: 0 10%;
-    color: rgb(246, 246, 246);
-}
-
-
-.book2-bottom {
-    height: 30%;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 5px 0;
 }
 
 
