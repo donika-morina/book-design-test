@@ -475,3 +475,76 @@
     width: 48px;
     margin-left: 1px;
 }
+
+/* ------------------------  GAME 1 DESIGN ------------------------ */
+/* XBOX */
+.boxx {
+    width: 20px;
+    height: 260px;
+    margin-top: 40px;
+    border-radius: 5%;
+    background-color: rgb(149, 223, 39);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.boxx-spine {
+    height: 96%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(230, 230, 230);
+}
+
+.boxx-logo {
+    border-bottom: 1px solid rgb(9, 158, 9);
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    background-color: rgb(243, 243, 243);
+}
+
+.boxx-circle {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(9, 158, 9);
+}
+
+.boxx-green {
+    color: rgb(144, 211, 43);
+    
+}
+
+.boxx-grey {
+    color:rgb(128, 128, 128);
+    
+}
+
+.boxx-green, .boxx-grey {
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.boxx-title {
+    height: 50%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto;
+}
+
+.boxx-ntsc {
+    width: fit-content;
+    font-size: 4px;
+    padding: 0 2px;
+    border: 1px solid rgba(56, 56, 56, 0.685);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
