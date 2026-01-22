@@ -11,3 +11,9 @@ This is a separate space for me to test new designs for The Media Journal ([http
 #### On Hover (Simple Scale Transformation):
 
 ![Book spines drawn using CSS](./assets/hover.png)
+
+### To Do List:
+- [ ] finalize font choices
+- [ ] revise the everyman's library style
+- [ ] add / revise publisher logos (for all of them)
+- [ ] add dvd 
