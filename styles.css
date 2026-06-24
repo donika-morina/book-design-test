@@ -39,7 +39,7 @@
 /* ----------------------  SHARED BOOK PROPERTIES ------------------------ */
 
 .book:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     box-shadow: 12px 10px 11px -3px rgba(0, 0, 0, 0.30),
         -12px 10px 11px -3px rgba(0, 0, 0, 0.30);
     z-index: 1;
@@ -521,15 +521,16 @@
 
 .boxx-green {
     color: rgb(144, 211, 43);
-    
+
 }
 
 .boxx-grey {
-    color:rgb(128, 128, 128);
-    
+    color: rgb(128, 128, 128);
+
 }
 
-.boxx-green, .boxx-grey {
+.boxx-green,
+.boxx-grey {
     font-size: 11px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
